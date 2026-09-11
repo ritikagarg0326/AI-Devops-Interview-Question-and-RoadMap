@@ -1,6 +1,6 @@
 # LogiOps - AWS DevOps Demo Project
 
-A Python Flask logistics management application designed to demonstrate an end-to-end DevOps workflow.
+A Python Flask logistics routes  management application designed to demonstrate an end-to-end DevOps workflow.
 
 ## Features
 
