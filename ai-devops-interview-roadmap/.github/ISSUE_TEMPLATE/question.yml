@@ -1,0 +1,23 @@
+name: Add interview question
+description: Propose a reviewed interview question
+title: "[Question]: "
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options: [Beginner, Intermediate, Advanced]
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and expected answer points
+    validations:
+      required: true

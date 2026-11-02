@@ -1,0 +1,83 @@
+[
+  {
+    "id": "k8s-001",
+    "topic": "Kubernetes",
+    "level": "intermediate",
+    "type": "scenario",
+    "question": "A Pod is in CrashLoopBackOff. Walk through your debugging process.",
+    "expected_points": [
+      "Inspect status and events",
+      "Read current and previous logs",
+      "Check command, args, environment and mounted configuration",
+      "Review probes and resource limits",
+      "Validate dependencies and recent changes",
+      "Apply safe fix and verify rollout"
+    ],
+    "follow_up": "How do you distinguish an application crash from a liveness-probe restart?"
+  },
+  {
+    "id": "aws-001",
+    "topic": "AWS",
+    "level": "advanced",
+    "type": "architecture",
+    "question": "Design secure EKS for workloads that should not have public node IPs.",
+    "expected_points": [
+      "Private worker subnets",
+      "Controlled API endpoint access",
+      "Pod identity or IRSA",
+      "Security groups and network policies",
+      "ECR access",
+      "NAT or VPC endpoints",
+      "Secrets and observability"
+    ],
+    "follow_up": "How can private nodes pull images without sending all traffic through NAT?"
+  },
+  {
+    "id": "tf-001",
+    "topic": "Terraform",
+    "level": "intermediate",
+    "type": "concept",
+    "question": "Why is Terraform state important and how do you protect it?",
+    "expected_points": [
+      "Maps config to resources",
+      "Tracks metadata and dependencies",
+      "Remote backend",
+      "State locking",
+      "Encryption and access control",
+      "Backups"
+    ],
+    "follow_up": "How do you reconcile state drift?"
+  },
+  {
+    "id": "cicd-001",
+    "topic": "CI/CD",
+    "level": "advanced",
+    "type": "scenario",
+    "question": "A deployment passed CI but caused production errors. What do you do?",
+    "expected_points": [
+      "Assess impact and communicate",
+      "Stop rollout",
+      "Rollback or roll forward using immutable artifact",
+      "Check telemetry",
+      "Preserve evidence",
+      "Prevent recurrence"
+    ],
+    "follow_up": "How can canary analysis reduce risk?"
+  },
+  {
+    "id": "linux-001",
+    "topic": "Linux",
+    "level": "intermediate",
+    "type": "troubleshooting",
+    "question": "A Linux host has high disk usage. How do you investigate safely?",
+    "expected_points": [
+      "Check df and inode usage",
+      "Use du to locate large directories",
+      "Inspect logs and container storage",
+      "Check deleted-but-open files with lsof",
+      "Avoid deleting unknown files",
+      "Fix retention and rotation"
+    ],
+    "follow_up": "Why can df and du report different usage?"
+  }
+]
